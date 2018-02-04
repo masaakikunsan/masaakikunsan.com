@@ -1,48 +1,59 @@
 <template>
   <div class="main">
-    <header>
-      <div class="header-content">
-        <div class="logo">
-          <nuxt-link to="/"><p>masaakiku<span class="color-orenge">n</span>sa<span class="color-green">n</span>.com</p></nuxt-link>
+    <div class="pc">
+      <header>
+        <div class="header-content">
+          <div class="logo">
+            <nuxt-link to="/"><p>masaakiku<span class="color-orenge">n</span>sa<span class="color-green">n</span>.com</p></nuxt-link>
+          </div>
+          <div class="nav-wrapper">
+            <nav>
+              <ul>
+                <li>
+                  <nuxt-link to="/biography">
+                    <span class="color-red">B</span>iography
+                    <small>自己紹介</small>
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/career">
+                    <span class="color-orenge">C</span>areer
+                    <small>経歴</small>
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/article">
+                    <span class="color-green">A</span>rticle
+                    <small>記事</small>
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/sns">
+                    <span class="color-red">S</span>NS
+                    <small>SNS</small>
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/contact">
+                    <span class="color-orenge">C</span>ontact
+                    <small>連絡先</small>
+                  </nuxt-link>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="nav-wrapper">
-          <nav>
-            <ul>
-              <li>
-                <nuxt-link to="/biography">
-                  <span class="color-red">B</span>iography
-                  <small>自己紹介</small>
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/career">
-                  <span class="color-orenge">C</span>areer
-                  <small>経歴</small>
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/article">
-                  <span class="color-green">A</span>rticle
-                  <small>記事</small>
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/sns">
-                  <span class="color-red">S</span>NS
-                  <small>SNS</small>
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/contact">
-                  <span class="color-orenge">C</span>ontact
-                  <small>連絡先</small>
-                </nuxt-link>
-              </li>
-            </ul>
-          </nav>
+      </header>
+    </div>
+    <div class="sp">
+      <header>
+        <div class="header-content">
+          <div class="logo">
+            <nuxt-link to="/"><p>masaakiku<span class="color-orenge">n</span>sa<span class="color-green">n</span>.com</p></nuxt-link>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
     <div class="container">
       <nuxt/>
       <img src="~/assets/sakura.png" alt="sakura" class="card-img">
@@ -178,5 +189,47 @@ small {
 
 .m-t-30 {
   margin-top: 30px;
+}
+
+.sp {
+  display: none;
+}
+
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 939px) {
+  .sp {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  header {
+    height: 70px;
+    padding: 15px;
+  }
+
+  .container {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: inherit;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .card-img {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
 }
 </style>

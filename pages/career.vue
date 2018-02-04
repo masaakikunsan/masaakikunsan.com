@@ -66,8 +66,4 @@ export default {
   font-weight: bold;
   width: 220px;
 }
-
-.position {
-  font-weight: bold;
-}
 </style>

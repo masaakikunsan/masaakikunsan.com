@@ -1,10 +1,38 @@
 <template>
   <section>
     <h1><span class="color-red">S</span>NS</h1>
-    <p class="m-t-30">Twitter: https://twitter.com/masaakikunsan</p>
-    <p class="m-t-15">Facebook: https://ja-jp.facebook.com/people/%E7%9F%B3%E5%B2%A1%E5%B0%86%E6%98%8E</p>
-    <p class="m-t-15">GIthub: https://github.com/masaakikunsan</p>
-    <p class="m-t-15">Qiita: https://qiita.com/masaakikunsan</p>
-    <p class="m-t-15">Instagram: https://www.instagram.com/masaakikunsan</p>
+    <p class="m-t-30 flex">
+      <img src="~/assets/Twitter_Social_Icon_Square_Color.png">
+      <a href="https://twitter.com/masaakikunsan" target="_blank">https://twitter.com/masaakikunsan</a>
+    </p>
+    <p class="m-t-15 flex">
+      <img src="~/assets/FB-f-Logo__blue_512.png">
+      <a href="https://www.facebook.com/masaakikunsan" target="_blank">https://www.facebook.com/masaakikunsan</a>
+    </p>
+    <p class="m-t-15 flex">
+      <img src="~/assets/GitHub-Mark-120px-plus.png">
+      <a href="https://github.com/masaakikunsan" target="_blank">https://github.com/masaakikunsan</a>
+    </p>
+    <p class="m-t-15 flex">
+      <img src="~/assets/qiita.png">
+      <a href="https://qiita.com/masaakikunsan" target="_blank">https://qiita.com/masaakikunsan</a>
+    </p>
+    <p class="m-t-15 flex">
+      <img src="~/assets/glyph-logo_May2016.png">
+      <a href="https://www.instagram.com/masaakikunsan" target="_blank">https://www.instagram.com/masaakikunsan</a>
+    </p>
   </section>
 </template>
+
+<style scoped>
+img {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+</style>
