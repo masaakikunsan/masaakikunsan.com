@@ -22,6 +22,9 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: 'inherit' },
+  plugins: [
+    { src: '~plugins/ga.js', ssr: false }
+  ],
   /*
   ** Build configuration
   */
